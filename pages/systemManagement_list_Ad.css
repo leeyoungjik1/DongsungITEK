@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 body{
   margin: 0; padding: 0;
-  width: 100vw; min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -156,6 +156,7 @@ main{
   box-sizing: border-box;
   gap: 8px;
   padding-right: 46px;
+  box-sizing: border-box;
 }
 #mainHeader p{
   font-size: 14px;
@@ -181,4 +182,6 @@ footer{
   font-size: 14px;
   position: absolute;
   bottom: 0;
+  left: 0;
+  box-sizing: border-box;
 }

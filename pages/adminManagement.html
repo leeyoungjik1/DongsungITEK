@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="systemManagement_list_Ad.css">
+  <link rel="stylesheet" href="adminManagement.css">
+</head>
+<body>
+  <header>
+    <div id="logoContainer">
+      <div id="logo"></div>
+      <div id="menuButton"></div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="">홈</a></li>
+        <li id="status">
+          <div class="menuIcons grid_view"></div>
+          <a href="">주차장 운영 현황</a>
+        </li>
+        <li>
+          <a href="">탄력주차/단속/감면</a>
+          <ul>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons car_repair"></div>
+                  <a href="">탄력주차</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">입출차 관리</a></li>
+                <li><a href="">미납 관리</a></li>
+                <li><a href="">환불 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons switch_video"></div>
+                  <a href="">단속</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">단속 관리</a></li>
+                <li><a href="">부정주차 단속 제외 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons developer_guide"></div>
+                  <a href="">감면</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">감면 관리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">주차장/주차권</a>
+          <ul>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons car_repair"></div>
+                  <a href="">주차장</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">주차장 관리</a></li>
+                <li><a href="">주차장 운영 기관 설정</a></li>
+                <li><a href="">가상구역 전체보기</a></li>
+                <li><a href="">통합 주차장 목록</a></li>
+                <li><a href="">대안 주차장 목록</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons car_repair"></div>
+                  <a href="">주차권</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">주차권 구매관리</a></li>
+                <li><a href="">주차권 사용관리</a></li>
+                <li><a href="">주차권 관리</a></li>
+                <li><a href="">주차권 유의 사항 관리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">매출/정산</a>
+          <ul>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons car_tag"></div>
+                <a href="">매출관리</a>
+              </div>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons account_balance"></div>
+                <a href="">정산관리</a>
+              </div>
+          </ul>
+        </li>
+        <li>
+          <a href="">회원관리</a>
+          <ul>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons badge"></div>
+                <a href="">회원관리</a>
+              </div>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons clinical_notes"></div>
+                <a href="">거주자 배정 관리</a>
+              </div>
+          </ul>
+        </li>
+        <li>
+          <a href="">PUSH/위치</a>
+          <ul>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons stream_apps"></div>
+                  <a href="">PUSH</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">푸쉬발송현황</a></li>
+                <li><a href="">푸쉬발송관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons signal_wifi_4_bar"></div>
+                  <a href="">위치정보</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">위치정보목록</a></li>
+                <li><a href="">위치정보 제공목록</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">게시판</a>
+          <ul>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons event_note"></div>
+                  <a href="">게시판관리</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">공지사항 관리</a></li>
+                <li><a href="">자주묻는질문 관리</a></li>
+                <li><a href="">팝업 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons export_notes"></div>
+                  <a href="">운영 게시판</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">사내 공지사항 관리</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="">통계</a>
+          <ul>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons area_chart"></div>
+                <a href="">지역별 주차분석</a>
+              </div>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons bar_chart"></div>
+                <a href="">요일/시간별 분석</a>
+              </div>
+            <li class="iconMenus">
+              <div>
+                <div class="menuIcons ssid_chart"></div>
+                <a href="">매출분석</a>
+              </div>
+          </ul>
+        </li>
+        <li>
+          <a href="">스마트 가드</a>
+          <ul>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons filter_1"></div>
+                  <a href="">LIDAR 관리</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">LIDAR 펌웨어</a></li>
+                <li><a href="">LIDAR 목록</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons filter_2"></div>
+                  <a href="">VMS 관리</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">VMS 펌웨어</a></li>
+                <li><a href="">VMS 연동 목록</a></li>
+                <li><a href="">VMS 목록</a></li>
+                <li><a href="">VMS 목록 신규</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons filter_3"></div>
+                  <a href="">RTK 관리</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">RTK 설정 조회</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="">설정</a>
+          <ul>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons settings_account_box"></div>
+                  <a href="">운영 관리</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">운영자 관리</a></li>
+                <li><a href="">운영기관 관리</a></li>
+              </ul>
+            </li>
+            <li>
+              <div class="iconMenus">
+                <div>
+                  <div class="menuIcons settings"></div>
+                  <a href="">시스템 관리</a>
+                </div>
+                <div class="rightArrow"></div>
+              </div>
+              <ul>
+                <li><a href="">기본 설정</a></li>
+                <li><a href="">약관 관리</a></li>
+                <li><a href="">권한 설정</a></li>
+                <li><a href="">통합코드 관리</a></li>
+                <li><a href="">메뉴 관리</a></li>
+              </ul>
+            </li> 
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="mainHeader">
+      <p>홍길동 관리자 님 반갑습니다.</p>
+      <div id="downArrow"></div>
+    </div> 
+    <div id="contentContainer">
+      <!-- 메인컨텐츠 위치 -->
+      <h2>운영자 관리</h2>
+      <form>
+        <div>
+          <div id="periodBox">
+            <label for="period">기간 조회</label>
+            <input type="date" name="period" id="period"> ~
+            <input type="date" name="period" id="period">
+          </div>
+          <div id="statusBox">
+            <label for="status">상태</label>
+            <div>
+              <input type="radio" name="status" id="status" checked="checked">전체
+              <input type="radio" name="status" id="status">사용중
+              <input type="radio" name="status" id="status">미사용
+            </div>
+          </div>
+        </div>
+        <div id="searchBox">
+          <label for="search">통합 검색</label>
+          <select name="search" id="search">
+            <option value="none">검색조건</option>
+          </select>
+          <input type="search" name="search" id="search">
+        </div>
+        <button type="submit">검색</button>
+      </form>
+      <div>
+        <div id="list">
+          <p>총 3건</p>
+          <div>
+            <form>
+              <select name="numberOfPage" id="numberOfPage">
+                <option value="30">30개</option>
+              </select>
+            </form>
+            <div>
+              <button>리스트 보기</button>
+              <button>등록</button>
+            </div>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <th>운영자 번호</th>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>전화번호</th>
+            <th>운영기관</th>
+            <th>상태</th>
+            <th>등록일</th>
+            <th>등록자</th>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>admin</td>
+            <td>공*철</td>
+            <td>010-****-1234</td>
+            <td>경기도 이천시</td>
+            <td>사용중</td>
+            <td>2024.02.08</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>admin1111</td>
+            <td>이*요</td>
+            <td>010-****-5252</td>
+            <td>충청남도 예산군</td>
+            <td>사용중</td>
+            <td>2024.01.01</td>
+            <td>master</td>
+          </tr>
+          <tr>
+            <td colspan="8">등록된 정보가 없습니다.</td>
+          </tr>
+        </table>
+        <div id="pagination">
+          <div><</div>
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>
+          <div>6</div>
+          <div>7</div>
+          <div>8</div>
+          <div>9</div>
+          <div>10</div>
+          <div>></div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>©2024 Dongsungitec. All rights reserved </p>
+    </footer>     
+  </main>
+</body>
+</html>

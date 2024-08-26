@@ -1,0 +1,121 @@
+#contentContainer{
+  padding: 50px 37px;
+  box-sizing: border-box;
+}
+#contentContainer h2{
+  font-size: 24px;
+  font-weight: bold;
+}
+#contentContainer>form{
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#contentContainer form>div{
+  display: flex;
+  border-top: 1px solid #B9B9B9;
+}
+#contentContainer form>div:nth-child(2){
+  border-bottom: 1px solid #B9B9B9;
+}
+
+#contentContainer form label{
+  width: 216px; height: 50px;
+  background-color: #F0F0F0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  border-right: 1px solid #B9B9B9;
+}
+#periodBox, #statusBox, #searchBox {
+  display: flex;
+  align-items: center;
+}
+#periodBox input:nth-child(2){
+  margin-left: 10px;
+}
+#statusBox{
+  /* margin-left: 339px; */
+  padding-left: 3rem;
+}
+#statusBox div{
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+#statusBox input:not(:nth-child(1)){
+  margin-left: 31px;
+}
+#searchBox select{
+  margin-left: 10px;
+}
+#searchBox input{
+  margin-left: 1rem;
+}
+#contentContainer form button{
+  width: 66px; height: 32px;
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  background-color: white;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #1C1B1F;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+}
+#list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  margin-top: 49px;
+}
+#list>div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#list>div>div{
+  display: flex;
+  /* align-items: center; */
+}
+#list button{
+  background-color: #FFFFFF;
+  border: 1px solid #7B7B7B;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+}
+#contentContainer table{
+  width: 100%;
+  border: 1px solid #B9B9B9;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+  table-layout: fixed;
+}
+#contentContainer th, #contentContainer td{
+  border: 1px solid #B9B9B9;
+  height: 38px;
+}
+#contentContainer th{
+  background-color: rgba(0, 0, 0, 0.06);
+}
+#contentContainer tr:nth-child(2) td{
+  background-color: rgba(198, 214, 226, .5);
+}
+#contentContainer tr:nth-child(16) td{
+  color: #767676;
+}
+#pagination{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
