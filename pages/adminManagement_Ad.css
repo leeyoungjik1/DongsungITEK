@@ -6,20 +6,20 @@
   font-size: 24px;
   font-weight: bold;
 }
-#contentContainer>form{
+#searchForm{
   width: 100%;
   box-sizing: border-box;
   font-size: 14px;
 }
-#contentContainer form>div{
+#searchForm>div{
   display: flex;
   border-top: 1px solid #B9B9B9;
 }
-#contentContainer form>div:nth-child(2){
+#contentContainer  >div:nth-child(2){
   border-bottom: 1px solid #B9B9B9;
 }
 
-#contentContainer form label{
+#searchForm label{
   width: 216px; height: 50px;
   background-color: #F0F0F0;
   display: flex;
@@ -32,6 +32,10 @@
 #periodBox, #statusBox, #searchBox {
   display: flex;
   align-items: center;
+}
+#periodBox input{
+  width: 142px; height: 34px;
+  padding-left: 12px;
 }
 #periodBox input:nth-child(2){
   margin-left: 10px;
@@ -49,12 +53,14 @@
   margin-left: 31px;
 }
 #searchBox select{
+  width: 136px; height: 34px;
   margin-left: 10px;
 }
 #searchBox input{
+  width: 693px; height: 34px;
   margin-left: 1rem;
 }
-#contentContainer form button{
+#searchForm button{
   width: 66px; height: 32px;
   margin: 0 auto;
   margin-top: 1rem;
@@ -85,7 +91,14 @@
   display: flex;
   /* align-items: center; */
 }
+#list select{
+  width: 136px;
+  height: 32px;
+  border-radius: 2px;
+  padding-left: 12px;
+}
 #list button{
+  height: 32px;
   background-color: #FFFFFF;
   border: 1px solid #7B7B7B;
   border-radius: 4px;
@@ -118,4 +131,113 @@
   justify-content: center;
   gap: 1rem;
   margin-top: 1rem;
+}
+.modal{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none ; */
+}
+.addAdmin{
+  width: 498px; height: 766px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 4.8px;
+  padding: 0 26px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.addAdmin h3{
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.96px;
+}
+#closeIcon{
+  width: 52px; height: 56px;
+  background-image: url(../assets/Button\ -\ Close.png);
+}
+.modalHeader{
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.addAdmin form{
+  border-top: 1px solid #F3F3F3;
+  border-bottom: 1px solid #F3F3F3;
+  padding: 26px 0;
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.addAdmin form>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addAdmin form label{
+  font-size: 14px;
+  letter-spacing: -0.48px;
+}
+.addAdmin form p{
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: -0.77px;
+  color: #FF4747;
+  margin-top: 5px;
+}
+.addAdmin form input{
+  width: 329.5px; height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  border-radius: 3.2px;
+  padding-left: 12.95px;
+}
+.addAdmin form select{
+  width: 329.5px; height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  padding-left: 12.95px;
+}
+#id{
+  width: 254.5px;
+}
+#idBox>div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#idBox button{
+  width: 66px; height: 32px;
+  border: 1px solid #7B7B7B;
+  border-radius: 4px;
+  background-color: white;
+  color: #515151;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  padding: 0;
+}
+#buttonBox button{
+  width: 66px; height: 32px;
+  margin-top: 16px;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  color: #5F0080;
+  background-color: white;
+  border: 1px solid #5F245C;
+  border-radius: 3px;
+}
+#buttonBox{
+  display: flex;
+  justify-content: end;
 }
