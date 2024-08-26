@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+body{
+  margin: 0; padding: 0;
+  width: 100vw; min-height: 100vh;
+  display: flex;
+  font-family: "Noto Sans KR", sans-serif;
+}
+header{
+  width: 217px;
+}
+#logoContainer{
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 22px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #E3E3E3;
+  border-right: 1px solid #E3E3E3;
+}
+nav{
+  width: 100%; height: calc(100% - 60px);
+  border-right: 1px solid #E3E3E3;
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+nav ul, nav li{
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+nav>ul>li:not(:nth-child(1)){
+  border-bottom: 1px solid #E3E3E3;
+}
+nav a{
+  line-height: 44px;
+  text-decoration: none;
+  color: #7B7B7B;
+}
+nav>ul>li>a{
+  font-weight: 600;
+}
+nav>ul>li>ul>li>ul>li{
+  display: flex;
+  align-items: center;
+  display: none;
+}
+#logo{
+  width: 40px;
+  height: 35px;
+  background-image: url(../assets/logo2.png);
+}
+#menuButton{
+  width: 22.56px;
+  height: 25px;
+  background-image: url(../assets/menuButton.png);
+  background-repeat: no-repeat;
+}
+.iconMenus{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.iconMenus>div:nth-child(1){
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#status{
+  display: flex ;
+  align-items: center;
+  gap: 10px;
+}
+.menuIcons{
+  width: 20px; height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid_view{
+  background-image: url(../assets/icons/grid_view.png);
+}
+.car_repair{
+  background-image: url(../assets/icons/car_repair.png);
+}
+.switch_video{
+  background-image: url(../assets/icons/switch_video.png);
+}
+.developer_guide{
+  background-image: url(../assets/icons/developer_guide.png);
+}
+.car_tag{
+  background-image: url(../assets/icons/car_tag.png);
+}
+.account_balance{
+  background-image: url(../assets/icons/account_balance.png);
+}
+.badge{
+  background-image: url(../assets/icons/badge.png);
+}
+.clinical_notes{
+  background-image: url(../assets/icons/clinical_notes.png);
+}
+.stream_apps{
+  background-image: url(../assets/icons/stream_apps.png);
+}
+.signal_wifi_4_bar{
+  background-image: url(../assets/icons/signal_wifi_4_bar.png);
+}
+.event_note{
+  background-image: url(../assets/icons/event_note.png);
+}
+.export_notes{
+  background-image: url(../assets/icons/export_notes.png);
+}
+.area_chart{
+  background-image: url(../assets/icons/area_chart.png);
+}
+.bar_chart{
+  background-image: url(../assets/icons/bar_chart.png);
+}
+.ssid_chart{
+  background-image: url(../assets/icons/ssid_chart.png);
+}
+.filter_1{
+  background-image: url(../assets/icons/filter_1.png);
+}
+.filter_2{
+  background-image: url(../assets/icons/filter_2.png);
+}
+.filter_3{
+  background-image: url(../assets/icons/filter_3.png);
+}
+.settings_account_box{
+  background-image: url(../assets/icons/settings_account_box.png);
+}
+.settings{
+  background-image: url(../assets/icons/settings.png);
+}
+.rightArrow{
+  width: 24px; height: 24px;
+  background-image: url(../assets/Dropdown.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+main{
+  position: relative;
+}
+#mainHeader{
+  width: calc(100vw - 217px); height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-bottom: 1px solid #E3E3E3;
+  box-sizing: border-box;
+  gap: 8px;
+  padding-right: 46px;
+}
+#mainHeader p{
+  font-size: 14px;
+  color: #4A4A4A;
+  font-weight: 500;
+  letter-spacing: -0.84px;
+}
+#downArrow{
+  width: 19.17px; height: 10px;
+  background-image: url(../assets/Container.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#contentContainer{
+  width: calc(100vw - 217px);
+}
+footer{
+  width: calc(100vw - 217px); height: 66px;
+  background-color: #F3F3F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+}

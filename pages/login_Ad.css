@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 body{
   margin: 0; padding: 0;
   width: 100vw; height: 100vh;
@@ -6,6 +7,8 @@ body{
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
 }
 #loginContainer{
   width: 620px;
@@ -25,6 +28,8 @@ body{
 }
 #titleBox h1{
   font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -1.44px;
 }
 #logo{
   width: 80px;
@@ -55,6 +60,8 @@ form button{
 #warningPhrase p{
   font-size: 12px;
   margin: 0;
+  font-weight: 300;
+  letter-spacing: -0.79px;
 }
 footer{
   width: 620px;
@@ -65,4 +72,6 @@ footer p, address{
   font-size: 12px;
   margin: 3px 0;
   font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.79px;
 }
