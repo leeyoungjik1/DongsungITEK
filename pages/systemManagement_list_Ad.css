@@ -73,6 +73,9 @@ nav>ul>li>ul>li>ul>li{
   align-items: center;
   gap: 10px;
 }
+#status a{
+  color: #5F0080;
+}
 .menuIcons{
   width: 20px; height: 20px;
   background-position: center;
