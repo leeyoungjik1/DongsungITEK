@@ -9,12 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 
-/* 운영자 정보 등록 */
-.addAdmin{
-  width: 498px; height: 766px;
+/* 공지사항 등록 */
+.addnotice{
+  width: 498px; height: 698px;
   box-sizing: border-box;
   background-color: white;
   border-radius: 4.8px;
@@ -41,7 +41,7 @@
   align-items: center;
   padding: 0 26px;
 }
-.addAdmin form{
+.addnotice form{
   border-top: 1px solid #F3F3F3;
   border-bottom: 1px solid #F3F3F3;
   padding: 26px;
@@ -50,53 +50,74 @@
   flex-flow: column;
   justify-content: space-between;
 }
-.addAdmin form>div{
+.addnotice form>div{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.addAdmin form label{
+.addnotice form label{
   font-size: 14px;
   letter-spacing: -0.48px;
 }
-.addAdmin form p{
-  margin: 0;
-  font-size: 12px;
-  letter-spacing: -0.77px;
-  color: #FF4747;
-  margin-top: 5px;
-}
-.addAdmin form input{
-  width: 329.5px; height: 32px;
+.addnotice form input{
   box-sizing: border-box;
   border: 1px solid #999999;
-  border-radius: 3.2px;
-  padding-left: 12.95px;
+  border-radius: 3px;
+  padding-left: 12.5px;
+  font-size: 14px;
+  letter-spacing: -0.84px;
 }
-.addAdmin form select{
-  width: 329.5px; height: 32px;
+#title{
+  width: 329.5px;
+  height: 32px;
+}
+#description{
+  width: 329.5px;
+  height: 369px;
+  padding: 0;
   box-sizing: border-box;
-  border: 1px solid #999999;
-  border-radius: 4px;
-  padding-left: 12.95px;
+  font-size: 14px;
+  letter-spacing: -0.84px;
 }
-.addAdmin #id{
-  width: 254.5px;
+input[type='file'] {
+  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
-.addAdmin #idBox>div{
+.searchFileBox{
   display: flex;
   align-items: center;
   gap: 10px;
 }
-#idBox button{
-  width: 66px; height: 32px;
-  border: 1px solid #7B7B7B;
-  border-radius: 4px;
-  background-color: white;
-  color: #515151;
+#searchFile{
+  width: 76.92px;
+  height: 32px;
+  border: 1px solid #515151;
+  border-radius: 3px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #686868;
   font-size: 14px;
   letter-spacing: -0.84px;
-  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#searchFileInput{
+  display: flex;
+  width: 245px;
+  height: 32px;
+  background-color: #F4F4F4;
+  border: 1px solid #989898;
+  border-radius: 4px;
+  color: #686868;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 #buttonBox{
   display: flex;
@@ -111,15 +132,14 @@
   background-color: white;
   border-radius: 3px;
 }
-.addAdmin #buttonBox button{
+.addnotice #buttonBox button{
   color: #5F0080;
   border: 1px solid #5F245C;
 }
 
-
-/* 운영자 정보 상세 */
-.adminDetails{
-  width: 498px; height: 582px;
+/* 공지사항 상세 */
+.noticeDetails{
+  width: 498px; height: 567.5px;
   box-sizing: border-box;
   background-color: white;
   border-radius: 4.8px;
@@ -154,26 +174,32 @@
   margin: 0;
   font-size: 14px;
   letter-spacing: -0.84px;
+  max-width: 300px;
 }
-.adminDetails #buttonBox{
+.sampleImgBox{
+  width: 135px;
+  height: 131.5px;
+  background-image: url(../assets/sampleimg.png);
+}
+.noticeDetails #buttonBox{
   gap: 21px;
 }
-.adminDetails #buttonBox button:nth-child(1){
+.noticeDetails #buttonBox button:nth-child(1){
   color: #7B7B7B;
   border: 1px solid #686868;
 }
-.adminDetails #buttonBox button:nth-child(2){
-  color: #71C016;
-  border: 1px solid #71C016;
+.noticeDetails #buttonBox button:nth-child(2){
+  color: #FF4747;
+  border: 1px solid #FF4747;
 }
-.adminDetails #buttonBox button:nth-child(3){
+.noticeDetails #buttonBox button:nth-child(3){
   color: black;
   border: 1px solid black;
 }
 
-/* 운영자 정보 수정 */
-.modifyAdmin{
-  width: 498px; height: 943px;
+/* 공지사항 수정 */
+.modifyNotice{
+  width: 498px; height: 953.5px;
   box-sizing: border-box;
   background-color: white;
   border-radius: 4.8px;
@@ -181,9 +207,9 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  display: none;
+  /* display: none; */
 }
-.modifyAdmin form{
+.modifyNotice form{
   border-top: 1px solid #F3F3F3;
   border-bottom: 1px solid #F3F3F3;
   padding: 26px;
@@ -192,60 +218,88 @@
   flex-flow: column;
   justify-content: space-between;
 }
-.modifyAdmin form>div{
+.modifyNotice form>div{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.modifyAdmin form label{
+.modifyNotice form label{
   font-size: 14px;
   letter-spacing: -0.48px;
 }
-.modifyAdmin form>div>div>p{
-  margin: 0;
-  font-size: 12px;
-  letter-spacing: -0.77px;
-  color: #FF4747;
-  margin-top: 5px;
-}
-.modifyAdmin form input{
-  width: 329.5px; height: 32px;
+.modifyNotice form input{
   box-sizing: border-box;
   border: 1px solid #999999;
-  border-radius: 3.2px;
-  padding-left: 12.95px;
-  color: #495057;
+  border-radius: 3px;
+  padding-left: 12.5px;
+  font-size: 14px;
+  letter-spacing: -0.84px;
 }
-.modifyAdmin form select{
-  width: 329.5px; height: 32px;
+#titleModify{
+  width: 329.5px;
+  height: 32px;
+}
+#descriptionModify{
+  width: 329.5px;
+  height: 369px;
+  padding: 8px 14.5px;
   box-sizing: border-box;
-  border: 1px solid #999999;
-  border-radius: 4px;
-  padding-left: 12.95px;
-  color: #495057;
+  font-size: 14px;
+  letter-spacing: -0.84px;
 }
-#idBox input{
+input[type='file'] {
+  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+#searchFileModify{
+  width: 76.92px;
+  height: 32px;
+  border: 1px solid #515151;
+  border-radius: 3px;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #686868;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  box-sizing: border-box;
+  cursor: pointer;
 }
-.modifyAdmin h4{
+#searchFileInputModify{
+  display: flex;
+  width: 245px;
+  height: 32px;
+  background-color: #F4F4F4;
+  border: 1px solid #989898;
+  border-radius: 4px;
+  color: #686868;
+  font-size: 14px;
+  letter-spacing: -0.84px;
+  align-items: center;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+.modifyNotice h4{
   width: 116.5px;
   margin: 0;
   font-size: 14px;
   font-weight: normal;
   letter-spacing: -0.84px;
 }
-.modifyAdmin p{
-  width: 329.5px;
+.modifyNotice p{
   margin: 0;
   font-size: 14px;
   letter-spacing: -0.84px;
-  color: #495057;
-}
-.modifyAdmin #buttonBox button{
-  color: #5F0080;
-  border: 1px solid #5F245C;
+  max-width: 300px;
 }
 
-.show{
-  display: flex;
+
+
+
+.modifyNotice #buttonBox button{
+  color: #5F0080;
+  border: 1px solid #5F245C;
 }
